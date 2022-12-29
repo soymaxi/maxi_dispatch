@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#all {
+    position: absolute;
+    right: 60%;
+    bottom: 23%;
+}
+
+body{
+    overflow:hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.origen-logo {
+    position: absolute;
+    height: 140px;
+    left: 76px;
+    opacity: 0.2;
+    width: auto;
+}
+
+.t-frame {
+    position: absolute;
+    width: 300px;
+    min-height: 150px; 
+    height: auto; 
+    background: #343a409c;
+    z-index: -2;
+    border-radius: 2px;
+}
+
+.t-frame-grey {
+    position: absolute;
+    
+    width:280px;
+    border-radius: 2px;
+    height:195px;
+    z-index: -1;
+}
+
+.vehicle {
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 54px;
+    opacity: 1;
+    height: auto;
+    width: 190px;
+}
+
+
+.right {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    padding-top: 132px;
+    padding-left: 241px;
+    height: 30px;
+    width: auto;
+}
+
+.right-border {
+    position: absolute;
+    margin-top: 132px;
+    width: 40px;
+    border-radius: 2px;
+    margin-left: 237px;
+    height: 20px;
+    background: #141414;
+    z-index: -2;
+}
+
+.right.anim {
+    animation: color_anim 1s forwards 
+}
+
+.left {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    padding-top: 132px;
+    padding-left: 28px;
+    height: 30px;
+    width: auto;
+}
+.left.anim {
+    animation: color_anim 1s forwards 
+}
+
+.left-border {
+    position: absolute;
+    margin-top: 132px;
+    width: 40px;
+    border-radius: 2px;
+    margin-left: 20px;
+    height: 20px;
+    background: #141414;
+    z-index: -2;
+}
+
+.avpag {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    padding-top: 128px;
+    padding-left: 130px;
+    height: 40px;
+    width: auto;
+}
+
+.avpag-border {
+    position: absolute;
+    margin-top: 132px;
+    width: 45px;
+    border-radius: 4px;
+    margin-left: 128px;
+    height: 20px;
+    background: #141414;
+    z-index: -2;
+}
+
+.avpag.space {
+    margin-top: 145px;
+}
+
+.avpag-border.space {
+    margin-top: 272px;
+}
+
+.left.space {
+    margin-top: 145px;
+}
+
+.left-border.space {
+    margin-top: 272px;
+}
+
+.right.space {
+    margin-top: 145px;
+}
+
+.right-border.space {
+    margin-top: 272px;
+}
+
+.avpag.anim {
+    animation: color_anim 1s forwards 
+}
+
+.t-frame-grey-title {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 18px;
+    width: 200px;
+    color: rgb(241, 243, 245);
+    padding-top: 13px;
+    padding-left: 83px;
+}
+
+.t-frame-sup-border {
+    position: absolute;
+    width: 300px; 
+    height: 25px;
+    background: #343a40;
+    border-radius: 2px;
+    z-index: -2;
+}
+
+.t-frame-sup-border.alert {
+    animation: color_change 2s forwards;
+}
+
+.t-frame-sup-border.ambualert {
+    animation: color_ambuchange 2s forwards;
+}
+
+.t-frame-sup-border.mecaalert {
+    animation: color_mecachange 2s forwards;
+}
+
+.t-frame-sup-border.taxialert {
+    animation: color_taxichange 2s forwards;
+}
+
+
+.t-frame-inf-border {
+    position: absolute;
+    margin-top: 130px;
+    width: 300px; 
+    height: 35px;
+    background: #343a40;
+    z-index: -2;
+}
+
+.infsvg {
+    position: absolute;
+    padding-top: 2px;
+    padding-left: 2px;
+    opacity: 1.8;
+    height: auto;
+    width: 22px;
+    
+}
+
+.infsvg.alert-contrast {
+    animation: filter 2s forwards;
+}
+
+.t-frame-grey-content {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 13px;
+    width: 270px;
+    color: rgb(241, 243, 245);
+    padding-top: 42px;
+    padding-left: 10px;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.callnum {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 12px;
+    width: 290px;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    padding-top: 3px;
+    padding-left: 28px;  
+}
+
+.callnum.alert-contrast {
+    animation: contrast 2s forwards;
+    opacity: 0.8;
+}
+
+.num.space {
+    padding-left: 50px;  
+}
+
+.num {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 12px;
+    width: 290px;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    padding-top: 3px;
+    padding-left: 44px;   
+}
+
+.num.alert-contrast {
+    animation: contrast 2s forwards;
+    opacity: 0.8;
+}
+
+.cust-text.space {
+    padding-left: 148px;  
+}
+
+.cust-text {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 10px;
+    width: 290px;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    padding-top: 0px;
+    padding-left: 60px; 
+    z-index: 1;
+}
+
+.cust-text.alert-contrast {
+    animation: contrast 2s forwards;
+    opacity: 0.8;
+}
+
+.t-frame-sup-border.InConfig {
+    background: linear-gradient(270deg, #121414, #4a4e4e);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+.t-frame-inf-border.InConfig {
+    background: linear-gradient(270deg, #121414, #4a4e4e);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+.t-frame.space {
+    height: 300px;
+}
+
+.t-frame-inf-border.space {
+    margin-top: 275px;
+}
+
+@-webkit-keyframes configAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes configAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes configAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes color_anim {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes color_change {
+    0% {
+        background-color: #313030;
+    }
+    50% {
+        background-color: rgba(26, 11, 228, 0.651);
+    }
+    100% {
+        background-color: #313030;
+    }
+}
+
+@keyframes color_ambuchange {
+    0% {
+        background-color: #313030;
+    }
+    50% {
+        background-color: rgba(228, 11, 11, 0.651);
+    }
+    100% {
+        background-color: #313030;
+    }
+}
+
+@keyframes color_taxichange {
+    0% {
+        background-color: #313030;
+    }
+    50% {
+        background-color: rgba(228, 195, 11, 0.651);
+    }
+    100% {
+        background-color: #313030;
+    }
+}
+
+@keyframes color_mecachange {
+    0% {
+        background-color: #313030;
+    }
+    50% {
+        background-color: rgba(192, 189, 189, 0.651);
+    }
+    100% {
+        background-color: #313030;
+    }
+}
+
+@keyframes contrast {
+    0% {
+        color: #ffffff;
+        opacity: 0.8;
+    }
+    50% {
+        color: rgb(255, 255, 255);
+        opacity: 1;
+    }
+    100% {
+        color: #ffffff;
+        opacity: 0.8;
+    }
+}
+
+@keyframes filter {
+    0% {
+
+    }
+    50% {
+        filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+        opacity: 1;
+    }
+    100% {
+        filter: sepia(0%) hue-rotate(0deg) saturate(0%);
+        opacity: 0.2;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu */
+
+
+#configmenu {
+    left: 30%;
+    top: 10%;
+    position: absolute;
+}
+
+.t-menuclass {
+    position: absolute;
+    width: 500px;
+    min-height: 150px; 
+    height: 600px; 
+    background: #313030ec;
+    z-index: -2;
+    border-radius: 10px;
+}
+
+.tmenu-top-border {
+    position: absolute;
+    width: 500px; 
+    height: 50px;
+    background: #000000;
+    border-radius: 10px;
+}
+
+.menu-titlename {
+    position: absolute;
+    color: white;
+    width: 500px;
+    font-size: 25px;
+    margin-top: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-style: initial;
+    text-align: center;
+}
+
+.fa-circle-info {
+    color: white;
+}
+
+/*buttons*/
+.delete-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #db1313;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 75px;
+    margin-left: 25px;
+}
+  
+.delete-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.delete-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.delete-button:hover span {
+    padding-right: 25px;
+}
+  
+.delete-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.images-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #db1313;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 75px;
+    margin-left: 45px;
+
+}
+  
+.images-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.images-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.images-button:hover span {
+    padding-right: 25px;
+}
+  
+.images-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+table {
+    overflow-y: scroll;
+    overflow-y: overlay;
+    table-layout:unset !important;
+}
+.alerts-table {
+    position: absolute;
+    margin-top: 60px;
+    color: white;
+    table-layout: fixed;
+    width: 700px;
+    height: auto;
+    overflow: scroll;
+    z-index: 5;
+    max-height: 800px;
+}
+
+th, td {
+    word-break: break-word;
+    min-width: 50px;
+}
+
+.table-container {
+    display: flex;
+    padding-left: -50px;
+    background-color: #465252;
+    width: 400px;
+    margin-left: 48px;
+    z-index: 4;
+    font-family: 'Poppins', sans-serif;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/*tabla*/
+.table-id {
+    position: absolute;
+    z-index: 3;
+    height: 100px;
+    margin-top: -25px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 40px;
+}
+
+.content-table-text {
+    position: absolute;
+    z-index: 4;
+    font-family: 'Poppins', sans-serif;
+    left: 78px;
+    width: 340px;
+    font-size: 10px;
+    margin-top: -60px;
+}
+
+.table-code {
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-display: center;
+    left: 181px;
+    margin-top: -100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #313030; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(32, 31, 31); 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.menu {
+    position: absolute;
+    flex: auto;
+    z-index: 100;
+}
+
+.menu-style {
+    position: absolute;
+    height: 105px;
+    width: 100px;
+    background: rgba(255, 246, 246, 0.904);
+    left: 800px;
+    -webkit-box-shadow: 0px 2px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 28px 0px rgba(0,0,0,0.75);
+}
+
+.minimenu-button {
+    position: absolute;
+    background: rgba(255, 246, 246, 0.904);
+    border: none;
+    top: 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    right: 0px;
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.minimenu-button:hover {
+    background-color: #465252;
+}
+
+.minimenu-button-deleteall {
+    position: absolute;
+    background: rgba(255, 246, 246, 0.904);
+    border: none;
+    top: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    right: 0px;
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.minimenu-button-deleteall:hover {
+    background-color: #465252;
+}
+
+.minimenu-button-images {
+    position: absolute;
+    background: rgba(255, 246, 246, 0.904);
+    border: none;
+    top: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    right: 0px;
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.minimenu-button-images:hover {
+    background-color: #465252;
+}
+
+
+hr {
+    position: absolute;
+    top: 42px;
+    height: 1px;
+    right: 5%;
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: rgba(80, 79, 79, 0.582);
+}
+
+.minimenu-button-togglealerts {
+    position: absolute;
+    background: rgba(255, 246, 246, 0.904);
+    border: none;
+    top: 80px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    right: 0px;
+    width: 100%;
+    height: 20px;
+    font-size: 11px;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.minimenu-button-togglealerts:hover {
+    background-color: #465252;
+}
+
+.parpadea {
+  
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
