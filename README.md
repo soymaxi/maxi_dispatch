@@ -24,3 +24,7 @@ local pedcoords = GetEntityCoords(PlayerPedId())
 local id = GetPlayerServerId(PlayerId())
 TriggerServerEvent("guille_dispatch:sendRobaAlert", "robo", pedcoords, id) --- Don't Change "robo" becouse is the code for identify the trigger
 ```
+
+# Preview
+---
+![previe](https://cdn.discordapp.com/attachments/1057013118162710649/1057758336356986920/image.png)
