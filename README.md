@@ -22,7 +22,7 @@ To translate the script just edit the strings from client, index.html and js.
 ```
 local pedcoords = GetEntityCoords(PlayerPedId())
 local id = GetPlayerServerId(PlayerId())
-TriggerServerEvent("guille_dispatch:sendRobaAlert", "robo", pedcoords, id) --- Don't Change "robo" becouse is the code for identify the trigger
+TriggerServerEvent("guille_dispatch:sendRobaAlert", "robo", pedcoords, id) --- Don't Change "robo" >> identify the trigger
 ```
 
 # Preview
